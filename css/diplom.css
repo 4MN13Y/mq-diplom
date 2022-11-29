@@ -35,11 +35,128 @@ button {
   cursor: pointer;
 }
 /* ----------PREPARATION----END---------*/
-/* 
 
+/*--------------POPUP-----START---------- */
+.popup-wrap {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  width: 100%;
+  min-height: 590px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ffffff;
+  padding: 60px 20px 55px 25px;
+  line-height: 1.6;
+}
+.popup-form-select {
+  margin-bottom: 30px;
+}
+.popup-select-name {
+  display: block;
+  margin-bottom: 10px;
+}
+.popup-select {
+  color: #888;
+  width: 100%;
+  height: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: 3%;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  border: none;
+  background-color: #f4f7f6;
+}
+.popup-select:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+.popup-form-radio {
+  margin-bottom: 30px;
+}
+.popup-radio-name {
+  display: flex;
+  margin-bottom: 10px;
+}
+.radio {
+  appearance: none;
+}
+.popup-radio-text::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../svg/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.radio:checked ~ .popup-radio-text::before {
+  background-image: url(../svg/form-circle.svg);
+}
+.popup-opinion-name {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.popup-field-opinion {
+  overflow: auto;
+  resize: none;
+  width: 330px;
+  height: 130px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 18px;
+  border: none;
+  background-color: #f4f7f6;
+}
+.popup-field-opinion:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+.popup-close {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+}
 
-*/
+/* -----------POPUP------END--------------- */
+
 /* --------HEAADER----START----------- */
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -433,7 +550,7 @@ button {
 /* ---------ASIDE--SEARCH--END------- */
 
 /* ---------SUBSCRIBE----START------- */
-.subscribe-button {
+.option-button {
   margin-top: 18px;
   height: 48px;
   border: none;
@@ -445,7 +562,7 @@ button {
   font-size: 13px;
 }
 
-.subscribe-button:hover {
+.option-button:hover {
   background-color: #000000;
   transition: 0.3s;
 }
@@ -533,6 +650,9 @@ button {
 /* -------THEMES----END--------- */
 
 /* -------FOOTER----START--------- */
+.footer {
+  margin-top: auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
