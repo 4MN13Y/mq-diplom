@@ -38,7 +38,7 @@ button {
 
 /*------------POPUP----------START---------- */
 .popup-wrap {
-  display: no;
+  display: none;
   width: 100%;
   height: 100%;
   align-items: center;
