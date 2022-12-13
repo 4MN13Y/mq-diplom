@@ -78,7 +78,7 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url(../svg/form-arrows.svg);
-  background-size: 3%;
+  background-size: 10px;
   background-repeat: no-repeat;
   background-position: right 5px center;
   border: none;
@@ -325,16 +325,16 @@ button {
 .news-text {
   margin-left: 30px;
 }
-.news-teg {
+.news-tag {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin-bottom: 10px;
 }
-.teg-item {
+.tag-item {
   margin-right: 20px;
 }
-.teg-item:last-child {
+.tag-item:last-child {
   margin-right: 0;
 }
 
@@ -580,17 +580,17 @@ button {
 }
 /* ---------SUBSCRIBE----END------- */
 /* ------------TAGS---START-------- */
-.tegs {
+.tags {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-.tegs-item {
+.tags-item {
   margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 6px;
 }
-.tegs-link {
+.tags-link {
   display: block;
   text-decoration: none;
   font-family: open-sans-b, sans-serif;
@@ -600,7 +600,7 @@ button {
   border: 3px solid #f4f3f1;
   padding: 3px 11px;
 }
-.tegs-link:hover {
+.tags-link:hover {
   border: 3px solid #b59f5b;
 }
 
